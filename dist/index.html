@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ping Pong Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-200 via-purple-200 to-pink-200 flex flex-col justify-center items-center h-screen">
+  <div class="text-center mb-8">
+    <h1 class="ping-pong-heading transition duration-500 ease-in-out text-6xl font-bold inline-block text-dark hover:text-red-500 mb-9 mt-5">Ping Pong Game</h1>
+    <div class="relative">
+      <canvas class="border-2 bg-black mx-auto" id="canvas" style="width: 600px; height: 400px;"></canvas>
+    </div>
+    <p class="text-gray-600 mt-4 text-xl">Control: Player Left (W and S) | Player Right (↑ and ↓)</p>
+  </div>
+
+  
+  <!-- Button container -->
+  <div class="button-container">
+    <button id="start-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Start</button>
+    <button id="pause-btn" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 ml-4 rounded">Pause</button>
+    <button id="restart-btn" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 ml-4 rounded">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
